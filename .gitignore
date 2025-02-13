@@ -1,0 +1,19 @@
+.env
+# État Terraform (contient des informations sensibles)
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+
+# Lock file de Terraform (évite les conflits d'état lors des exécutions concurrentes)
+.terraform.lock.hcl
+
+# Dossier de cache de Terraform (contient les modules et les providers téléchargés)
+.terraform/
+
+# Plans Terraform (fichiers binaires générés par `terraform plan -out`)
+*.tfplan
+
+# Variables sensibles (si tu stockes tes credentials ici)
+*.auto.tfvars
+*.tfvars
